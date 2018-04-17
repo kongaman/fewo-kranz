@@ -11,10 +11,20 @@
   }
 
   &__image {
+    padding-bottom: 5px;
 
     @mixin atMedium {
+      padding-top: 10px;
       padding-right: 15px;
-    }  
+      padding-bottom: 0;
+    }
+  }
+
+  &__image--last {
+
+    @mixin atMedium {
+      padding-right: 0;
+    }
   }
 
   &--no-b-padding-until-medium {

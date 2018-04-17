@@ -12,71 +12,93 @@
 
 <body>
   Ferienwohnung Kranz
-  <ul>
-    <li><a href="#ausstattung">Ausstattung</a></li>
-    <li><a href="#preise">Preise</a></li>
-    <li><a href="#anreise">Anreise</a></li>
-    <li><a href="#bilder">Bilder</a></li>
-    <li><a href="#kontakt">Kontakt</a></li>
-  </ul>
+  <nav>
+    <ul>
+      <li><a href="#ausstattung">Ausstattung</a></li>
+      <li><a href="#preise">Preise</a></li>
+      <li><a href="#anreise">Anreise</a></li>
+      <li><a href="#bilder">Bilder</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
+
   <div class="starter">
-    <img class="starter__image" src="assets/images/wingert-large.jpg" alt="Landschaft Weinbaugebiet">
+    <picture>
+      <source srcset="assets/images/wingert-large.jpg" media="(min-width: 1380px)">
+      <source srcset="assets/images/wingert-medium.jpg" media="(min-width: 990px)">
+      <source srcset="assets/images/wingert-smaller.jpg" media="(min-width: 640px)">
+      <img class="starter__image" src="assets/images/wingert-smaller.jpg" alt="Landschaft Weinbaugebiet">
+    </picture>
     <div class="starter__text-content">
-      <h1 class="starter__title">Herzlich Willkommen <br />an der Südlichen Weinstraße</h1>
+      <div class="wrapper">
+        <h1 class="starter__title">Herzlich Willkommen <br />an der Südlichen Weinstraße</h1>
+      </div>
     </div>
+  </div>
+  <div class="page-section">
+    <div class="wrapper">
+      <h1 class="headline headline--centered">Unsere Ferienwohnung</h1>
+        <p class="page-section__content--centered">Unser Haus steht in einem ruhigen Wohngebiet in 76879 Essingen (VG Offenbach/Queich)</p>
+        <p class="page-section__content--centered">Hier stellen wir Ihnen eine abgeschlossene Dachwohnung für 2 Personen zur Verfügung</p>
+        <div class="page-section__content--centered">
+          <img class="page-section__image" src="assets/images/bild1.jpg">
+          <img class="page-section__image"src="assets/images/haus1.jpg">          
+        </div>
 
+      <div id="ausstattung">
+        <h1 class="headline headline--centered headline--b-margin-small">Ausstattung</h1>
+          	<h2 class="headline headline--centered headline--small headline--light">So ist unsere <strong>Nichtraucherwohnung</strong> augestattet</h2>
+            <img src="assets/images/blauplan.jpg">
+          	- 1 Wohnraum mit Essbereich, Schreibtisch, Fernseher
+          	- Balkon / Loggia
+          	- 1 Schlafraum mit Doppelbett
+          	- Bad mit Dusche und WC, Föhn
+          	- Küche mit Cerankochfeld, Backofen, Kühl- und Gefrierkombination, Spülmaschine, Kaffeemaschine, Wasserkocher, Toaster, Mikrowelle
+          	- 1 PKW-Stellplatz
+            - Handtücher, Badetücher, Küchen- und Bettwäsche, Wasser- und Stromverbrauch und die Endreinigung sind im Preis inbegriffen
+      </div>
+    </div>
   </div>
 
-  	<img src="assets/images/haus1.jpg">
-    <img src="assets/images/bild1.jpg">
-    <p>Unser Haus steht in einem ruhigen Wohngebiet in 76879 Essingen (VG Offenbach/Queich)</p>
-    <p>Hier stellen wir Ihnen eine abgeschlossene Dachwohnung für 2 Personen zur Verfügung</p>
 
-  <div id="ausstattung">
-    <h2>Ausstattung</h2>
-    	Unsere NICHTRAUCHERWOHNUNG ist wie folgt ausgestattet:
-      <img src="assets/images/blaup.jpg">
-    	- 1 Wohnraum mit Essbereich, Schreibtisch, Fernseher
-    	- Balkon / Loggia
-    	- 1 Schlafraum mit Doppelbett
-    	- Bad mit Dusche und WC, Föhn
-    	- Küche mit Cerankochfeld, Backofen, Kühl- und Gefrierkombination, Spülmaschine, Kaffeemaschine, Wasserkocher, Toaster, Mikrowelle
-    	- 1 PKW-Stellplatz
-      - Handtücher, Badetücher, Küchen- und Bettwäsche, Wasser- und Stromverbrauch und die Endreinigung sind im Preis inbegriffen
+  <div id="bilder" class="page-section">
+      <h2>Weitere Bilder der Ferienwohnung:</h2>
+        <img src="assets/images/bg-wingert-large.jpg">
+    		<img src="assets/images/bad-full.jpg">
+        <img src="assets/images/bad-wb.jpg">
+        <img src="assets/images/bild1.jpg">
+        <img src="assets/images/ess.jpg">
+        <img src="assets/images/kueche.jpg">
+        <img src="assets/images/sz.jpg">
+        <img src="assets/images/wz1.jpg">
+        <img src="assets/images/wz2.jpg">
+  </div>
+  <div id="preise" class="page-section page-section--green">
+    <div class="wrapper">
+      <h2>Preise:</h2>
+       	pro Nacht ab 4 Nächten: 35,- €
+      	bei 3 Nächten 45,- €
+      	Mindestaufenthalt: 3 Nächte
+    </div>
   </div>
 
-  <div id="preise">
-  	<h2>Preise:</h2>
-     	pro Nacht ab 4 Nächten: 35,- €
-    	bei 3 Nächten 45,- €
-    	Mindestaufenthalt: 3 Nächte
+  <div id="anreise" class="page-section page-section--green">
+    <div class="wrapper">
+      ANREISE:Ab 14 Uhr oder nach telefonischer Absprache
+    	ABREISE: Bis 10 Uhr
+      Anfahrt - RoutenplanerLink
+    </div>
   </div>
 
-  <div id="anreise">
-  	ANREISE:Ab 14 Uhr oder nach telefonischer Absprache
-  	ABREISE: Bis 10 Uhr
-    Anfahrt - RoutenplanerLink
-  </div>
-
-  <div id="bilder">
-	<h2>Weitere Bilder der Ferienwohnung:</h2>
-    <img src="assets/images/bg-wingert-large.jpg">
-		<img src="assets/images/bad-full.jpg">
-    <img src="assets/images/bad-wb.jpg">
-    <img src="assets/images/bild1.jpg">
-    <img src="assets/images/ess.jpg">
-    <img src="assets/images/kueche.jpg">
-    <img src="assets/images/sz.jpg">
-    <img src="assets/images/wz1.jpg">
-    <img src="assets/images/wz2.jpg">
-  </div>
-  <div id="kontakt">
-    <h2>Kontakt</h2>
-      So erreichen Sie Unser
-      Margarete Kranz
-      Steinhauserstr. 7
-      76879 ESSINGEN
-      Tel.: 06347/1366
+  <div id="kontakt" class="page-section page-section--green">
+    <div class="wrapper">
+      <h2>Kontakt</h2>
+        So erreichen Sie Uns
+        Margarete Kranz
+        Steinhauserstr. 7
+        76879 ESSINGEN
+        Tel.: 06347/1366
+    </div>
   </div>
 
 </body>

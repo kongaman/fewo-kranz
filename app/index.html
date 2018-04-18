@@ -13,7 +13,7 @@
   <!-- endbuild -->
 
   <!-- build:js assets/scripts/Vendor.js -->
-  <!--script src="/temp/scripts/Vendor.js"></script>
+  <script src="/temp/scripts/Vendor.js"></script>
   <!-- endbuild -->
 </head>
 
@@ -31,9 +31,9 @@
       <div class="site-header__menu-content">
         <nav class="primary-nav primary-nav--pull-right">
           <ul>
-            <li><a href="#ausstattung">Ausstattung</a></li>
-            <li><a href="#preise">Kontakt und Preise</a></li>
-            <li><a href="#bilder">Bilder</a></li>
+            <li><a href="#ausstattung" id="ausstattung-link">Ausstattung</a></li>
+            <li><a href="#preise" id="preise-link">Kontakt und Preise</a></li>
+            <li><a href="#bilder" id="bilder-link">Bilder</a></li>
           </ul>
         </nav>
       </div>
@@ -64,7 +64,7 @@
           <img class="page-section__image page-section__image--last lazyload" src="assets/images/haus1.jpg">
         </div>
 
-      <div id="ausstattung" data-matching-link="#ausstattung">
+      <div id="ausstattung" class="page-section" data-matching-link="#ausstattung-link">
         <h1 class="headline headline--centered headline--b-margin-small">Ausstattung</h1>
         <h2 class="headline headline--centered headline--small headline--light">So ist unsere <strong>Nichtraucherwohnung</strong> augestattet</h2>
         <div class="row row--gutters">
@@ -78,7 +78,7 @@
               <strong>Küche</strong> mit Cerankochfeld, Backofen, Kühl- und Gefrierkombination, Spülmaschine, Kaffeemaschine, Wasserkocher, Toaster, Mikrowelle<br>
               <strong>Bad</strong> mit Dusche und WC, Föhn<br>
               <strong>Balkon / Loggia</strong></p>
-              <p><strong>PKW-Stellplatz</strong></p>
+              <p>Ein <strong>PKW-Stellplatz</strong> ist vorhanden</p>
               <p>Handtücher, Badetücher, Küchen- und Bettwäsche, Wasser- und Stromverbrauch und die Endreinigung sind im Preis inbegriffen</p>
             </div>
 
@@ -87,7 +87,7 @@
       </div>
     </div>
   </div>
-  <div id="preise" class="page-section page-section--green" data-matching-link="#preise">
+  <div id="preise" class="page-section page-section--green" data-matching-link="#preise-link">
     <div class="wrapper">
       <h2 class="section-title">Mieten Sie unsere Ferienwohnung</h2>
       <div class="row row--gutters-small row__b-margin generic-content-container">
@@ -124,7 +124,7 @@
       </div>
     </div>
   </div>
-  <div id="bilder" class="page-section page-section--no-b-padding-until-medium page-section--images" data-matching-link="#bilder">
+  <div id="bilder" class="page-section page-section--no-b-padding-until-medium page-section--images" data-matching-link="#bilder-link">
     <div class="wrapper wrapper--no-padding-until-medium">
       <div class="row row--gutters-large">
         <div class="row__medium-6">
@@ -132,24 +132,24 @@
             <img src="assets/images/wz1.jpg">
           </div>
           <div class="page-section__photo page-section--small-b-padding-until-medium lazyload">
+            <img src="assets/images/wz2.jpg">
+          </div>
+          <div class="page-section__photo page-section--small-b-padding-until-medium lazyload">
             <img src="assets/images/ess.jpg">
           </div>
           <div class="page-section__photo page-section--small-b-padding-until-medium lazyload">
             <img src="assets/images/sz.jpg">
           </div>
-          <div class="page-section__photo page-section--small-b-padding-until-medium lazyload">
-            <img src="assets/images/bad-full.jpg">
-          </div>
         </div>
         <div class="row__medium-6">
-          <div class="page-section__photo page-section--small-b-padding-until-medium lazyload">
-            <img src="assets/images/wz2.jpg">
-          </div>
           <div class="page-section__photo page-section--small-b-padding-until-medium lazyload">
             <img src="assets/images/kueche.jpg">
           </div>
           <div class="page-section__photo page-section__photo--last page-section--small-b-padding-until-medium lazyload">
             <img src="assets/images/bad-wb.jpg">
+          </div>
+          <div class="page-section__photo page-section--small-b-padding-until-medium lazyload">
+            <img src="assets/images/bad-full.jpg">
           </div>
         </div>
       </div>

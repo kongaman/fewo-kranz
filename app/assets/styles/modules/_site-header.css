@@ -6,15 +6,15 @@
   transition: background-color .3s ease-out;
 
   &--is-expanded {
-    background-color: rgba($mainGreen, .55);
+    background-color: rgba($darkGreen, .55);
   }
 
   @mixin atMedium {
     position: fixed;
-    background-color: rgba($mainGreen, .4);
+    background-color: rgba($darkGreen, .4);
 
     &--dark {
-      background-color: rgba(23, 51, 72, .85);
+      background-color: rgba($darknGreen, .80);
     }
   }
 
@@ -26,7 +26,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%) scale(.8);
-    transition: transform .3s ease-out;
+    transition: all .3s ease-out;
     transform-origin: 50% 0;
     background-color: $mainGreen;
 
@@ -35,7 +35,8 @@
       transform: translateX(0);
 
       .site-header--dark & {
-        transform: scale(.56);
+        transform: scale(.62);
+        background-color: rgba($mainGreen, 0);
       }
     }
   }

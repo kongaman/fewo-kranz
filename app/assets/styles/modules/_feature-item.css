@@ -34,7 +34,7 @@
   &__content {
     text-align: center;
 
-    @mixin atMedium {
+    @mixin atSmall {
       text-align: left;
     }
   }

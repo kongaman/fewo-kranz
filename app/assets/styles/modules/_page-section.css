@@ -10,6 +10,11 @@
     align-items: center;
   }
 
+  &__content--padding {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
   &__image {
     padding-bottom: 5px;
 
@@ -24,6 +29,29 @@
 
     @mixin atMedium {
       padding-right: 0;
+    }
+  }
+  &__photo {
+    padding-bottom: 5px;
+    margin: 0 auto 0 auto;
+
+    @mixin atMedium {
+      padding-top: 10px;
+      padding-right: 15px;
+      padding-bottom: 0;
+    }
+  }
+
+  &__photo--last {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  &--small-b-padding-until-medium {
+    padding-bottom: 1rem;
+
+    @mixin atMedium {
+      padding-bottom: 4.5rem;
     }
   }
 
@@ -48,14 +76,14 @@
     color: #FFF;
   }
 
-  &--testimonials {
-    background-color: #e0e6ef;
+  &--images {
+    background-color: #EAE7E2;
 
     @mixin atLarge {
-      &.lazyloaded {
-        background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
+
+        background: url('../../assets/images/bg-wingert-large.jpg') top center no-repeat;
         background-size: cover;
-      }
+
     }
   }
 

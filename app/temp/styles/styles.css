@@ -466,7 +466,7 @@ img {
 }
 
 a {
-  color: #02381F;
+  color: #d59541;
 }
 
 .starter {
@@ -714,7 +714,16 @@ a {
   }
 
 .row--t-padding {
-    padding-top: 33px;
+    padding-top: 5px;
+
+  }
+
+@media (min-width: 800px) {
+
+.row--t-padding {
+      padding-top: 10px
+
+  }
   }
 
 .row--gutters {
@@ -840,3 +849,120 @@ a {
       display: -ms-flexbox;
       display: flex;
     }
+
+.generic-content-container p {
+    font-weight: 300;
+    line-height: 1.65;
+  }
+
+@media (min-width: 530px) {
+
+.generic-content-container p {
+      font-size: 1.125rem;
+      margin: 0 0 1.8rem 0
+  }
+  }
+
+.generic-content-container p a {
+    font-weight: 500;
+  }
+
+.section-title {
+  font-size: 2.55rem;
+  font-weight: 300;
+  text-align: center;
+
+}
+
+@media (min-width: 530px) {
+
+.section-title {
+    font-size: 3.75rem
+
+}
+  }
+
+.section-title strong {
+    font-weight: 500;
+  }
+
+.section-title--blue {
+    color: #2f5572;
+  }
+
+.section-title--less-margin {
+    margin-top: 0;
+    margin-bottom: 1.3rem;
+  }
+
+.section-title__icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .6rem;
+  }
+
+@media (min-width: 530px) {
+
+.section-title__icon {
+      position: relative;
+      top: 8px;
+      margin-right: .5rem;
+      margin-left: 0;
+      margin-bottom: 0;
+      display: inline-block
+  }
+  }
+
+.feature-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 530px) {
+
+.feature-item {
+    padding-left: 94px
+}
+  }
+
+.feature-item__icon {
+    display: block;
+    margin: 0 auto;
+  }
+
+@media (min-width: 530px) {
+
+.feature-item__icon {
+      position: absolute;
+      left: 0
+  }
+  }
+
+.feature-item__title {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: .7em;
+    margin-bottom: .8rem;
+    text-align: center;
+  }
+
+@media (min-width: 530px) {
+
+.feature-item__title {
+      text-align: left;
+      margin-top: 1em;
+      font-size: 1.875rem
+  }
+  }
+
+.feature-item__content {
+    text-align: center;
+  }
+
+@media (min-width: 800px) {
+
+.feature-item__content {
+      text-align: left
+  }
+  }

@@ -7,18 +7,39 @@
   <title>Ferienwohnung-Kranz</title>
   <meta name="keywords" content="Ferienwohnung, Fewo, Urlaub, Weinstraße, Südliche Weistraße, Pfalz, Rheinland-Pfalz, Unterkunft, Kranz, Essingen">
   <meta name="description" content="Ferienwohnung Südliche Weinstraße Rheinland-Pfalz">
+
+  <!-- build:css assets/styles/stvles.css -->
   <link rel="stylesheet" href="temp/styles/styles.css">
+  <!-- endbuild -->
+
+  <!-- build:js assets/scripts/Vendor.js -->
+  <script src="/temp/scripts/Vendor.js"></script>
+  <!-- endbuild -->
 </head>
 
 <body>
-  Ferienwohnung Kranz
-  <nav>
-    <ul>
-      <li><a href="#ausstattung">Ausstattung</a></li>
-      <li><a href="#preise">Kontakt und Preise</a></li>
-      <li><a href="#bilder">Bilder</a></li>
-    </ul>
-  </nav>
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="site-header__logo">
+        <div class="site-header__logo__text">
+          Ferienwohnung<br> Kranz
+        </div>
+      </div>
+      <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__middle"></div>
+      </div>
+      <div class="site-header__menu-content">
+        <nav class="primary-nav primary-nav--pull-right">
+          <ul>
+            <li><a href="#ausstattung">Ausstattung</a></li>
+            <li><a href="#preise">Kontakt und Preise</a></li>
+            <li><a href="#bilder">Bilder</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
 
   <div class="starter">
     <picture>
@@ -43,7 +64,7 @@
           <img class="page-section__image page-section__image--last" src="assets/images/haus1.jpg">
         </div>
 
-      <div id="ausstattung">
+      <div id="ausstattung" data-matching-link="#ausstattung">
         <h1 class="headline headline--centered headline--b-margin-small">Ausstattung</h1>
         <h2 class="headline headline--centered headline--small headline--light">So ist unsere <strong>Nichtraucherwohnung</strong> augestattet</h2>
         <div class="row row--gutters">
@@ -66,7 +87,7 @@
       </div>
     </div>
   </div>
-  <div id="preise" class="page-section page-section--green">
+  <div id="preise" class="page-section page-section--green" data-matching-link="#preise">
     <div class="wrapper">
       <h2 class="section-title">Mieten Sie unsere Ferienwohnung</h2>
       <div class="row row--gutters-small row__b-margin generic-content-container">
@@ -103,7 +124,7 @@
       </div>
     </div>
   </div>
-  <div id="bilder" class="page-section page-section--no-b-padding-until-medium page-section--images">
+  <div id="bilder" class="page-section page-section--no-b-padding-until-medium page-section--images" data-matching-link="#bilder">
     <div class="wrapper wrapper--no-padding-until-medium">
       <div class="row row--gutters-large">
         <div class="row__medium-6">
@@ -141,5 +162,9 @@
       <p><span class="site-footer__text">Copyright &copy; 2018 Christian Kranz<br />Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p></span>
     </div>
   </footer>
+
+  <!-- build:js assets/scripts/App.js -->
+  <script src="/temp/scripts/App.js"></script>
+  <!-- endbuild -->
 </body>
 </HTML>
